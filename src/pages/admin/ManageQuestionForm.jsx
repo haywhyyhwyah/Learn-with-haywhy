@@ -34,7 +34,7 @@ const ManageQuestionForm = ({ onClose, onSubmit }) => {
 
     const loadTests = async () => {
         try {
-            const res = await fetch('http://localhost:3000/admin/questions');
+            const res = await fetch('https://lwh-backend-nine.vercel.app/admin/questions');
             if (!res.ok) throw new Error('Could not load tests');
             const data = await res.json();
             setAvailableTests(data.questions || []);
@@ -83,7 +83,7 @@ const ManageQuestionForm = ({ onClose, onSubmit }) => {
         setMessage('');
 
         try {
-            const response = await fetch('http://localhost:3000/admin/questions/batch', {
+            const response = await fetch('https://lwh-backend-nine.vercel.app/admin/questions/batch', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ subject, questions })

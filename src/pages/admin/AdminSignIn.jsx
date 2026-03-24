@@ -19,7 +19,7 @@ const AdminSignIn = () => {
             password
         }
 
-        axios.post('http://localhost:3000/admin/signin', adminData)
+        axios.post('https://lwh-backend-nine.vercel.app/admin/signin', adminData)
             .then(res => {
 
                 if (res.data.token) {

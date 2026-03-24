@@ -26,7 +26,7 @@ const SignupForm = () => {
         password
       };
 
-      axios.post('http://localhost:3000/user/signup', userData)
+      axios.post('https://lwh-backend-nine.vercel.app/user/signup', userData)
         .then((res) => {
           setModal({
             show: true,

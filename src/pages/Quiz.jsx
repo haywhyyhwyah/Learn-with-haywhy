@@ -21,7 +21,7 @@ const Quiz = () => {
             return;
         }
 
-        fetch('http://localhost:3000/user/questions', {
+        fetch('https://lwh-backend-nine.vercel.app/user/questions', {
             headers: { authorization: token }
         })
             .then(r => r.json())
@@ -74,7 +74,7 @@ const Quiz = () => {
         }
 
         try {
-            const response = await fetch('http://localhost:3000/user/results', {
+            const response = await fetch('https://lwh-backend-nine.vercel.app/user/results', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json', authorization: token },
                 body: JSON.stringify({ subject, score, total: quizQuestions.length, answers }),

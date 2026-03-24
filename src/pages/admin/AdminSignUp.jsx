@@ -22,7 +22,7 @@ const AdminSignUp = () => {
             email,
             password
         }
-        axios.post('http://localhost:3000/admin/signup', adminData)
+        axios.post('https://lwh-backend-nine.vercel.app/admin/signup', adminData)
         .then(res => {
                 setModal({
                     show: true,

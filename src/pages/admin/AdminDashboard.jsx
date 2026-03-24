@@ -20,7 +20,7 @@ const AdminDashboard = () => {
             return;
         }
 
-        axios.get('http://localhost:3000/admin/dashboard', {
+        axios.get('https://lwh-backend-nine.vercel.app/admin/dashboard', {
             headers: { authorization: token }
         })
             .then((res) => {

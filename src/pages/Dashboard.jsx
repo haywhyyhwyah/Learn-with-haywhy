@@ -39,7 +39,7 @@ const Dashboard = () => {
             navigate('/signin');
         }
 
-        axios.get('http://localhost:3000/user/dashboard', {
+        axios.get('https://lwh-backend-nine.vercel.app/user/dashboard', {
             headers: { 'authorization': token }
         })
 
@@ -47,10 +47,10 @@ const Dashboard = () => {
                 const storedUser = localStorage.getItem("user");
                 setUser(JSON.parse(storedUser));
                 Promise.all([
-                    fetch('http://localhost:3000/user/questions', {
+                    fetch('https://lwh-backend-nine.vercel.app/user/questions', {
                         headers: { authorization: token }
                     }).then((r) => r.json()),
-                    fetch('http://localhost:3000/user/results', {
+                    fetch('https://lwh-backend-nine.vercel.app/user/results', {
                         headers: { authorization: token }
                     }).then((r) => r.json())
                 ]).then(([questionsData, resultsData]) => {
