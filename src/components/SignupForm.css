@@ -1,0 +1,18 @@
+.body{
+    background-image: url('/blackCBT.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-blend-mode: overlay;
+    background-color: rgba(0,0,0,0.35);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 1rem;
+}
+
+/* make sure the auth wrapper centers on small screens */
+@media (max-width: 600px){
+    .body{ padding: 1rem; background-position: top; }
+}

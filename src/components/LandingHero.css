@@ -1,0 +1,112 @@
+.hero-mother{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.Hero{
+    width: 45%;
+    min-width: 260px;
+}
+
+.Hero h1{
+    color: #255296;
+    font-weight: 700;
+    font-size: 50px;
+    margin-bottom: 1rem;
+    line-height: 1.05;
+}
+
+.Hero p{
+    color: #255296;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+    font-size: 18px;
+}
+/* 
+.Hero button{
+    background-color: #255296;
+    color: #fff;
+    border: none;
+    padding: 0.7rem 1.25rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+} */
+
+.Hero .d-flex{ /* keep bootstrap spacing but ensure wrapping */
+    align-items: center;
+}
+
+.hero2{
+    background-image: url('/cartoon.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 50%;
+    height: 500px;
+    border-radius: 12px;
+    min-width: 260px;
+}
+
+/* Tablet / small laptop */
+@media (max-width: 900px){
+    .hero-mother{
+        flex-direction: column-reverse;
+        align-items: center;
+        padding: 1.5rem 1rem;
+    }
+
+    .Hero, .hero2{
+        width: 100%;
+    }
+
+    .hero2{
+        height: 320px;
+    }
+
+    .Hero h1{
+        font-size: 38px;
+        text-align: center;
+    }
+
+    .Hero p{
+        text-align: center;
+    }
+
+    .Hero .d-flex{
+        justify-content: center;
+        gap: 0.75rem;
+        flex-wrap: wrap;
+    }
+
+    .Hero button{
+        width: 200px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 600px){
+    .Hero h1{
+        font-size: 28px;
+    }
+
+    .hero2{
+        height: 220px;
+    }
+
+    .Hero button{
+        width: 100%;
+    }
+
+    .hero-mother{
+        padding: 1rem 0.75rem;
+    }
+
+    .Hero{ padding: 0 0.5rem; }
+}

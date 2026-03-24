@@ -1,0 +1,43 @@
+.landing-cards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    align-items: stretch;
+    padding: 1rem;
+    color: #255296;
+    font-weight: bold;
+    font-family: 'Poppins', 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+}
+
+.card-wrapper{
+    flex: 0 1 calc(25% - 1rem);
+    box-sizing: border-box;
+    font-family: 'Poppins', 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+}
+
+.custom-card{
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Two columns on medium screens */
+@media (max-width: 900px){
+    .card-wrapper{
+        flex: 0 1 calc(50% - 1rem);
+    }
+}
+
+/* Single column on small screens */
+@media (max-width: 600px){
+    .card-wrapper{
+        flex: 0 1 100%;
+    }
+
+    .landing-cards{
+        padding: 0.5rem;
+        gap: 0.75rem;
+    }
+}

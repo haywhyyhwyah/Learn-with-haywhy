@@ -1,0 +1,110 @@
+.admin-signin-bg {
+    background: linear-gradient(120deg, #f7f9fc 0%, #fff 100%);
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 1rem;
+}
+
+.admin-signin-wrapper {
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 4px 24px rgba(144,199,93,0.10);
+    padding: 2.5rem 2rem;
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+.admin-signin-title {
+    color: #255296;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1.2rem;
+}
+
+.admin-signin-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.password-field {
+    position: relative;
+}
+
+.password-field input {
+    padding-right: 4.5rem;
+}
+
+.password-field .toggle-password {
+    position: absolute;
+    top: 50%;
+    right: 1rem;
+    transform: translateY(-50%);
+    background: transparent;
+    border: none;
+    color: #255296;
+    font-weight: 700;
+    cursor: pointer;
+    padding: 0;
+    font-size: 1.1rem;
+    line-height: 1;
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.password-field input {
+    padding-right: 3.25rem;
+}
+
+.admin-signin-form input {
+    padding: 0.8rem 1rem;
+    border: 1px solid #e6e9ef;
+    border-radius: 8px;
+    font-size: 1rem;
+    outline: none;
+    transition: border 0.2s;
+}
+
+.admin-signin-form input:focus {
+    border-color: #255296;
+}
+
+.admin-signin-btn {
+    background: #255296;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 0.8rem 1.2rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.admin-signin-btn:hover {
+    background: #007bff;
+}
+
+.admin-signin-link {
+    color: #255296;
+    text-decoration: underline;
+    font-size: 1rem;
+    margin-top: 1rem;
+    display: block;
+}
+
+@media (max-width: 600px) {
+    .admin-signin-wrapper {
+        padding: 1.5rem 0.5rem;
+        max-width: 95vw;
+    }
+    .admin-signin-title {
+        font-size: 1.4rem;
+    }
+}

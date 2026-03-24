@@ -1,0 +1,42 @@
+/* Basic navbar styles and responsiveness; keeps Bootstrap behavior but adjusts colors and spacing */
+
+.nav{
+	align-items: center;
+}
+
+.navbar{
+	background: #fff;
+}
+
+.navbar .navbar-brand img{
+	width: 65px;
+	height: 65px;
+	object-fit: cover;
+	border-radius: 50%;
+}
+
+.navbar .nav-link{
+	color: #255296;
+	font-weight: 600;
+}
+
+.navbar .nav-link:hover{
+	opacity: 0.85;
+}
+
+.navbar .d-flex button{
+	margin-left: 0.25rem;
+}
+
+@media (max-width: 768px){
+	.navbar .navbar-nav{
+		text-align: center;
+	}
+
+	.navbar .d-flex{
+		justify-content: center;
+		width: 100%;
+		margin-top: 0.5rem;
+	}
+}
+

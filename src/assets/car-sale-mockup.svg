@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1200" height="800" viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .bg { fill: #ffffff }
+      .accent { fill: #D32F2F }
+      .dark { fill: #0b0b0b }
+      .muted { fill: #666666 }
+      .btn { fill: #D32F2F; rx: 10; }
+      .btn-dark { fill: #0b0b0b; rx: 10; }
+      .card { fill: #fff; stroke: #eee; stroke-width: 1; rx: 14 }
+      .title { font-family: 'Segoe UI', Roboto, Arial; font-size: 36px; font-weight: 700; fill: #0b0b0b }
+      .subtitle { font-family: 'Segoe UI', Roboto, Arial; font-size: 20px; fill: #666 }
+      .small { font-family: 'Segoe UI', Roboto, Arial; font-size: 16px; fill: #333 }
+    </style>
+  </defs>
+
+  <rect class="bg" width="1200" height="800" />
+
+  <!-- Header -->
+  <rect x="0" y="0" width="1200" height="90" fill="#0b0b0b" />
+  <text x="40" y="56" class="title" fill="#ffffff">SellYourRide</text>
+  <rect x="980" y="20" width="160" height="50" class="btn-dark" />
+  <text x="1010" y="54" class="small" fill="#ffffff">Sign In</text>
+
+  <!-- Page Title -->
+  <text x="60" y="150" class="title">Selling: 2018 Honda Civic</text>
+  <text x="60" y="185" class="subtitle">Well maintained, single owner — 42,000 mi</text>
+
+  <!-- Main content card -->
+  <rect x="60" y="210" width="1080" height="480" class="card" />
+
+  <!-- Left: car illustration -->
+  <g transform="translate(90,240)">
+    <!-- simple stylized car body -->
+    <rect x="0" y="80" width="640" height="160" rx="40" fill="#D32F2F" />
+    <rect x="60" y="20" width="520" height="120" rx="40" fill="#FF5C5C" />
+    <!-- windows -->
+    <rect x="140" y="40" width="300" height="54" rx="8" fill="#ffffff" opacity="0.9" />
+    <!-- wheels -->
+    <circle cx="140" cy="260" r="44" fill="#111" />
+    <circle cx="140" cy="260" r="28" fill="#666" />
+    <circle cx="520" cy="260" r="44" fill="#111" />
+    <circle cx="520" cy="260" r="28" fill="#666" />
+    <!-- subtle shadow -->
+    <ellipse cx="320" cy="300" rx="260" ry="18" fill="#000" opacity="0.08" />
+  </g>
+
+  <!-- Right: details and CTA -->
+  <g transform="translate(780,260)">
+    <text x="0" y="0" class="title" fill="#0b0b0b">$15,900</text>
+    <text x="0" y="40" class="small">Location: Los Angeles, CA</text>
+    <text x="0" y="72" class="small">Transmission: Automatic • Fuel: Gasoline</text>
+
+    <rect x="0" y="110" width="320" height="60" class="btn" />
+    <text x="24" y="150" class="small" fill="#ffffff">Contact Seller</text>
+
+    <rect x="0" y="190" width="320" height="60" class="card" />
+    <text x="16" y="230" class="small">Seller: Jordan A.</text>
+    <text x="16" y="256" class="muted">Phone: (555) 123-4567</text>
+
+    <text x="0" y="340" class="subtitle">Description</text>
+    <text x="0" y="370" class="small" width="320">
+      Excellent condition, recent service, new tires, no accidents. Clean interior and exterior. Ready to drive away.
+    </text>
+  </g>
+
+  <!-- Footer strip with brand colors -->
+  <rect x="0" y="720" width="1200" height="80" fill="#D32F2F" />
+  <text x="40" y="765" class="small" fill="#ffffff">Listed on SellYourRide — Safe, fast, and local.</text>
+
+</svg>
