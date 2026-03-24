@@ -116,14 +116,14 @@ const Dashboard = () => {
                         <button className="modal-close" style={{ background: '#dc3545' }} onClick={modal.onConfirm}>Log out</button>
                     </div>
                 ) : (
-                    // Only show close button for non-logout modals
+
                     <div style={{ marginTop: '1rem' }}>
                         <button className="modal-close" onClick={modal.onClose}>Close</button>
                     </div>
                 )}
             </Modal>
             <div style={{ backgroundColor: '#f8f9fc', minHeight: '100vh', fontFamily: 'sans-serif' }}>
-                {/* Custom Styles for Modern Look */}
+
                 <style>{`
             .custom-card { border: none; border-radius: 12px; transition: transform 0.2s; }
             .stat-card { box-shadow: 0 4px 12px rgba(0,0,0,0.05); }
@@ -163,7 +163,7 @@ const Dashboard = () => {
                 </nav>
 
                 <main className="container py-5">
-                    {/* Welcome Section */}
+
                     <div className="mb-5">
                         <h1 className="fw-bold" style={{ color: '#2b3a67' }}>Welcome, {user} ✌️</h1>
                         <p className="text-muted">Interactive Quizzes Suggested</p>
@@ -175,7 +175,7 @@ const Dashboard = () => {
                         Time left: {formatTime(secondsLeft)}
                     </div> */}
 
-                    {/* Stats Section */}
+
                     <div className="row g-4 mb-5">
                         {(() => {
                             const quizzesDone = results.length;
@@ -208,13 +208,13 @@ const Dashboard = () => {
                         })()}
                     </div>
 
-                    {/* Recommendations Header */}
+
                     <div className="d-flex justify-content-between align-items-center mb-4">
                         <h4 className="fw-bold" style={{ color: '#2b3a67' }}>Recommended for You</h4>
                         <a href="#" className="text-success text-decoration-none fw-bold">View All Subjects</a>
                     </div>
 
-                    {/* Course Cards */}
+
                     <div className="row g-4">
                         {tests.length > 0 ? (
                             [...new Map(tests.map((q) => [q.subject, q])).values()].slice(0, 2).map((q, i) => (
